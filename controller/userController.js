@@ -115,6 +115,7 @@ const login = async (req, res) => {
       token,
       user: payload,
     });
+
   } catch (error) {
     console.error("Login Error:", error.message);
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
@@ -123,7 +124,6 @@ const login = async (req, res) => {
     });
   }
 };
-
 
 // End of Login function
 
